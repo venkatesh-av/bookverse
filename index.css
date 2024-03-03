@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.background-image-vr {
+  background-image: url('https://res.cloudinary.com/dgurkbuce/image/upload/v1708686015/wallhaven-5wmge1_crs9ls.jpg');
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#gradient-heading {
+  text-shadow: 2px 4px 2px rgb(173, 163, 150);
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nav-item-color {
+  color: white !important;
+}
+
+.nav-item-color:hover {
+  color: #e33d10 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+.card {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.18828781512605042) 100%,
+    rgba(249, 184, 103, 1) 100%
+  );
+  color: white;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+#loginSection {
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+.vr-logo {
+  height: 70px;
+  width: 80px;
+}
+
+#navItem1 {
+  color: #323f4b;
+}
+
+#navItem2 {
+  color: #323f4b;
+}
+
+#navItem3 {
+  color: #323f4b;
+}
+
+#navItem4 {
+  color: #323f4b;
+}
+
+.bp-heading {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.custoum-button {
+  color: white;
+  background-color: #1a2137;
+  border-radius: 5px;
+  border-width: 0px;
+  height: 40px;
+  width: 130px;
+}
+
+.feature-section-heading {
+  color: #1f2933;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.feature-image-size {
+  height: 60px;
+  width: 60px;
+}
+
+.feature-card-heading {
+  color: #1f2933;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.feature-card-description {
+  color: #7b8794;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.card-feature-section {
+  text-align: center;
+}
+
+.span-highlite-edit {
+  color: #1f2933;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.vr-kit-section {
+  background-color: #d1d6de;
+}
+
+.vr-kit-heading {
+  color: #1f2933;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 16px;
+}
+
+.vr-kit-section-img {
+  height: 250px;
+  width: 200px;
+}
+
+.vr-kit-description {
+  color: #323f4b;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.op-co-heading {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 30px;
+  color: #1f2933;
+}
+
+.op-co-description {
+  color: #7b8794;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.op-co-custom-button {
+  background-color: #1a2137;
+  color: white;
+  border-radius: 5px;
+  border-width: 0px;
+  height: 40px;
+  width: 130px;
+}
+
+.background-contact-us-vr {
+  background-color: #222b36;
+}
+
+.vr-contact-heading {
+  color: white;
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.button-vr-contact {
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: white;
+  height: 40px;
+  width: 130px;
+  margin-bottom: 25%;
+}
+
+.trending-blogs-section-heading {
+  color: #1f2933;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.trending-blogs-card-title {
+  color: #959ead;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.trending-blogs-card-description {
+  color: #323f4b;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.trending-blogs-card-link {
+  color: #1754a1;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.view-all-button {
+  color: #ffffff;
+  background-color: #1754a1;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  width: 173px;
+  height: 56px;
+  border-width: 0;
+  border-radius: 4px;
+}
+
+.products-section-heading {
+  color: #1f2933;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.products-section-bc1 {
+  background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png');
+  height: 100vh;
+  background-size: cover;
+}
+
+.products-section-bc2 {
+  background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png');
+  height: 100vh;
+  background-size: cover;
+}
+
+.products-section-button-1 {
+  border-width: 2px;
+  border-color: white;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  width: 140px;
+  background-color: transparent;
+}
+
+.products-section-bc1-h1 {
+  color: white;
+  font-weight: 400;
+}
+
+.products-section-button-2 {
+  border-width: 0px;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  width: 140px;
+  background-color: #1754a1;
+  margin: 10px;
+}
+
+.background-image-footer-section-ss {
+  background-color: #19232d;
+}
+
+.vr-logo-footer {
+  height: 50px;
+  width: 70px;
+}
+
+.google-size-vr-ss {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 15px;
+  background-color: #202b36;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.vr-logo-footer-size-ss {
+  color: #5a7184;
+  font-size: 18px;
+}
+
+.footer-address-vr {
+  color: #5a7184;
+  font-size: 18px;
+  text-align: center;
+  margin: 16px;
+}
+
+.vr-footer-heading-section {
+  color: #5a7184;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-address-vr-mail {
+  color: #5a7184;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-copy-right {
+  color: #959ead;
+  font-size: 20px;
+}
+
+.hor-line-ver {
+  background-color: #5a7184;
+}
+
+/* fav books  */
+
+.para1 {
+  font-family: 'Bree Serif';
+  font-size: 14px;
+  color: white;
+}
+
+.h4 {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+}
+
+.side1 {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 18px;
+}
+
+.r-container {
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    min-width: 300px;
+  }
+}
+
+.bg-container-fav {
+  background-color: #1b1b1b;
+  min-height: 100vh;
+  background-size: cover;
+  padding: 25px;
+}
+
+.image1 {
+  height: 180px;
+  width: 120px;
+  margin-right: 2rem;
+}
+
+.active-item {
+  color: #e33d10 !important;
+}
+
+/* loader*/
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  display: none; /* Initially hidden */
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

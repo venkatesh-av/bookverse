@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2f123240a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="C:\Users\venua\OneDrive\Desktop\bookverse\index.css"
+    />
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div id="loginSection" class="hidden">
+      <div class="row justify-content-center">
+        <h1 class="mb-5" id="gradient-heading">
+          The more that you read, the more things you will know
+        </h1>
+        <div class="col-md-6">
+          <div class="card" id="form1">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+              <form id="loginForm">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required
+                    placeholder="Enter username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    required
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                  Submit
+                </button>
+                <button type="text" class="btn btn-info" id="gotoSignIn">
+                  Sign up
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="card hidden" id="form2">
+            <div class="card-header">Sign up</div>
+            <div class="card-body">
+              <form id="loginForm">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required
+                    placeholder="Enter username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    required
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="passwordc">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    required
+                    id="passwordc"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+                <button class="btn btn-primary" id="submitBtnSign">
+                  Submit
+                </button>
+                <button class="btn btn-info" id="Login">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mainContent">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              width="140"
+              height="60"
+              src="https://res.cloudinary.com/dgurkbuce/image/upload/v1708880102/image-removebg-preview_1_gnenkd.png"
+              id="mainLogo"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="mr-5">
+                <form class="form-inline mr-auto">
+                  <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-primary my-2 my-sm-0"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-item-color active-item" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-color" href="#" id="navItem2"
+                  >Books</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-color" id="Authors">Authors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-color" id="RBooks"
+                  >Recommended books</a
+                >
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-danger hidden" id="logoutButton">
+                  Logout
+                </button>
+                <button class="btn btn-primary" id="loginButton">Log in</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="background-image-vr d-flex flex-column justify-content-center"
+      >
+        <div class="text-center">
+          <h1 class="bp-heading text-center">
+            Today a reader, tomorrow a leader.
+          </h1>
+          <!-- <button class="custoum-button">View More</button> -->
+        </div>
+      </div>
+      <div class="pt-5 pb-5" id="trendeingBooks">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="trending-blogs-section-heading pb-2">
+                Trending Books
+              </h1>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="shadow mb-3">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-1-img.png"
+                  class="w-100"
+                />
+                <div class="p-3">
+                  <h1 class="trending-blogs-card-title">Amazon</h1>
+                  <p class="trending-blogs-card-description">
+                    New Way to See the World. It is a simulated experience that
+                    can be completely different from the real world.
+                  </p>
+                  <a class="trending-blogs-card-link" href="">
+                    READ MORE
+                    <svg
+                      width="16px"
+                      height="16px"
+                      viewBox="0 0 16 16"
+                      class="bi bi-arrow-right-short"
+                      fill="#1754a1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="shadow mb-3">
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-trending-blogs-2-img.png"
+                  class="w-100"
+                />
+                <div class="p-3">
+                  <h1 class="trending-blogs-card-title">Advertising</h1>
+                  <p class="trending-blogs-card-description">
+                    The best one for you. Come experience the wonder of Google
+                    Earth in virtual reality.
+                  </p>
+                  <a class="trending-blogs-card-link" href="">
+                    READ MORE
+                    <svg
+                      width="16px"
+                      height="16px"
+                      viewBox="0 0 16 16"
+                      class="bi bi-arrow-right-short"
+                      fill="#1754a1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex flex-row justify-content-end">
+              <button class="view-all-button">View All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="background-contact-us-vr mt-3 mb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2 text-center">
+              <div>
+                <h1 class="vr-contact-heading pt-5 p-3">
+                  Books are in now Virtually possible!!
+                </h1>
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-set-img.png"
+                  class="w-100 pl-3 m-3 pr-5 d-md-none"
+                />
+                <button class="button-vr-contact">CONTACT US</button>
+              </div>
+            </div>
+            <div class="col-md-6 d-none d-md-inline">
+              <div>
+                <img
+                  src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-set-img.png"
+                  class="w-75 pl-3 m-3 p-3 order-md-1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="visme_d"
+        data-title="Wordpress Contact Form"
+        data-url="w46wvnq1-wordpress-contact-form"
+        data-domain="forms"
+        data-full-page="false"
+        data-min-height="500px"
+        data-form-id="25431"
+      ></div>
+    </div>
+    <div id="loader" class="loader"></div>
+    <div class="hidden" id="favoriteBooks">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              width="140"
+              height="60"
+              src="https://res.cloudinary.com/dgurkbuce/image/upload/v1708880102/image-removebg-preview_1_gnenkd.png"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="mr-5">
+                <form class="form-inline mr-auto">
+                  <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-primary my-2 my-sm-0"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-item-color" href="#" id="navItem1"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-item-color active-item"
+                  href="#"
+                  id="navItem2"
+                  >Books</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-color" id="Authors">Authors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-item-color" id="RBooks"
+                  >Recommended books</a
+                >
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-danger" id="logoutButton">Logout</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-container-fav">
+        <ul id="booksList"></ul>
+      </div>
+    </div>
+    <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    <script src="C:\Users\venua\OneDrive\Desktop\bookverse\index.js"></script>
+  </body>
+</html>
